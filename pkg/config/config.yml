@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  timeout: 60
+mssql:
+  connection:
+    gmxDB: "c2VydmVyPTEwLjkuMjI3LjE2ODt1c2VyIGlkPXNhO3Bhc3N3b3JkPVBAc3N3MHJkO3BvcnQ9NTAwOTE7ZGF0YWJhc2U9R01YO2VuY3J5cHQ9ZGlzYWJsZTs="
+    treasuryReportEODDB: "c2VydmVyPTEwLjkuMjI3LjE2ODt1c2VyIGlkPXRyc2FkbTtwYXNzd29yZD1QQHNzdzByZDtkYXRhYmFzZT1UcmVhc3VyeV9SZXBvcnRfRU9EO2VuY3J5cHQ9ZGlzYWJsZTs="
+ldap:
+  ktb:
+    network: "tcp"
+    address: "10.9.224.17"
+    port: 491
+    basedn:
+      search: "ou=people,o=ktb.co.th,o=kcs"
+    username: "uid=ktbquery,ou=people,o=kcs"
+    password: "!qAz2EdcxSw$rF"
+secret:
+  key: "yp?t~9-@B9JjSUM$e]gUbW~-e&B[:n<g"
+  jwtKey: "9187C8F98C3BA83D7F7E5E545FA68F9E"
+service:
+  endpoint: "api"
+  name: "rest-api-template"
