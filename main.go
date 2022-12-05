@@ -6,6 +6,7 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	"github.com/gofiber/fiber/v2/middleware/requestid"
+	"golang.fiber.template/pkg/server"
 	"golang.fiber.template/routers"
 )
 
@@ -24,4 +25,5 @@ func main() {
 
 	// routers.PublicRoutes(app, db)
 	routers.NotFoundRoute(app)
+	server.Start(app)
 }

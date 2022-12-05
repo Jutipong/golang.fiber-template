@@ -9,7 +9,7 @@ type Config struct {
 }
 
 type Server_Typd struct {
-	Port    int
+	Port    string
 	Timeout int
 }
 
