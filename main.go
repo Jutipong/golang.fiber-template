@@ -12,7 +12,7 @@ func main() {
 	db := new(model.ConnectDB)
 	defer func() {}()
 
-	app := server.App()
+	app := server.NewFiber()
 	routers.NotFoundRoute(app)
 	routers.PublicRoutes(app, db)
 	server.Start(app, cf)

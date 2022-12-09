@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/bytedance/sonic v1.5.0
+	github.com/goccy/go-json v0.10.0
 	github.com/gofiber/fiber/v2 v2.40.1
 	github.com/spf13/viper v1.14.0
 	gorm.io/gorm v1.24.2

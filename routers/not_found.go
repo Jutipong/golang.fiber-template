@@ -2,9 +2,9 @@ package routers
 
 import "github.com/gofiber/fiber/v2"
 
-func NotFoundRoute(a *fiber.App) {
-	a.Use(func(c *fiber.Ctx) error {
-		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
+func NotFoundRoute(app *fiber.App) {
+	app.Use(func(ctx *fiber.Ctx) error {
+		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{
 			"error":   true,
 			"message": "sorry, endpoint is not found",
 		})
