@@ -6,6 +6,7 @@ require (
 	github.com/bytedance/sonic v1.5.0
 	github.com/gofiber/fiber/v2 v2.40.1
 	github.com/spf13/viper v1.14.0
+	gorm.io/gorm v1.24.2
 )
 
 require (
@@ -13,9 +14,11 @@ require (
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/klauspost/compress v1.15.12 // indirect
-	github.com/klauspost/cpuid/v2 v2.2.1 // indirect
-	github.com/magiconair/properties v1.8.6 // indirect
+	github.com/klauspost/cpuid/v2 v2.2.2 // indirect
+	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mattn/go-runewidth v0.0.14 // indirect
