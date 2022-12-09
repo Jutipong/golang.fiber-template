@@ -1,6 +1,7 @@
 package main
 
 import (
+	"golang.fiber.template/model"
 	"golang.fiber.template/pkg/config"
 	"golang.fiber.template/pkg/server"
 	"golang.fiber.template/routers"
@@ -8,9 +9,11 @@ import (
 
 func main() {
 	cf := config.Init()
-	app := App()
+	db := new(model.ConnectDB)
+	defer func() {}()
 
-	// routers.PublicRoutes(app, db)
+	app := server.App()
 	routers.NotFoundRoute(app)
+	routers.PublicRoutes(app, db)
 	server.Start(app, cf)
 }

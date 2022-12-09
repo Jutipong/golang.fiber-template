@@ -4,9 +4,10 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
+	"golang.fiber.template/model"
 )
 
-func PublicRoutes(app *fiber.App) {
+func PublicRoutes(app *fiber.App, db *model.ConnectDB) {
 	fmt.Println(app)
 }
 
