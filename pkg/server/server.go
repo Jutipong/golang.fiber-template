@@ -6,7 +6,7 @@ import (
 	"os/signal"
 
 	"github.com/gofiber/fiber/v2"
-	"golang.fiber.template/model"
+	"golang.fiber.template/domain/model"
 )
 
 func Start(a *fiber.App, cf *model.Config) {

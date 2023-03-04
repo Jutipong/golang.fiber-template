@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golang.fiber.template/model"
+	"golang.fiber.template/domain/model"
 	"golang.fiber.template/pkg/config"
 	"golang.fiber.template/pkg/server"
 	"golang.fiber.template/routers"

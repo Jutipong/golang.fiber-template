@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
-	"golang.fiber.template/model"
+	"golang.fiber.template/domain/model"
 )
 
 func PublicRoutes(app *fiber.App, db *model.ConnectDB) {

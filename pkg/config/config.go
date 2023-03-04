@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/spf13/viper"
-	"golang.fiber.template/model"
+	"golang.fiber.template/domain/model"
 )
 
 func Init() (config *model.Config) {
