@@ -12,7 +12,7 @@ func Init() (config *model.Config) {
 	v := viper.New()
 	v.SetConfigType("yaml")
 	v.AutomaticEnv()
-	v.SetConfigFile("config.yaml")
+	v.SetConfigFile("./pkg/config/config.yaml")
 	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
 	if err := v.ReadInConfig(); err != nil {
