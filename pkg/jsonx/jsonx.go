@@ -1,15 +1,17 @@
 package jsonx
 
-import "github.com/goccy/go-json"
+import "github.com/bytedance/sonic"
+
+// import "github.com/goccy/go-json"
 
 func Marshal[T any](v T) ([]byte, error) {
-	return json.Marshal(v)
+	return sonic.Marshal(v)
 }
 
 func Unmarshal[T any](data []byte, v T) error {
-	return json.Unmarshal(data, v)
+	return sonic.Unmarshal(data, v)
 }
 
-func MarshalIndent[T any](v T, prefix string, indent string) ([]byte, error) {
-	return json.MarshalIndent(v, prefix, indent)
-}
+// func MarshalIndent[T any](v T, prefix string, indent string) ([]byte, error) {
+// 	return sonic.mash(v, prefix, indent)
+// }
